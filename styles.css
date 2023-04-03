@@ -1,0 +1,382 @@
+
+* {
+    /*font-family: "Titillium Web";*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  /*font-family: sans-serif;*/
+  padding: 10px 0;
+}
+
+
+.header {
+  background-color: #ff4bae;
+  height: 95px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 992px;
+  margin: 0 auto;
+}
+
+.nav-link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0 40px;
+  line-height: 80px;
+}
+
+.nav-menu {
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
+}
+
+.nav-menu-item {
+  font-size: 18px;
+  margin: 0 10px;
+  line-height: 80px;
+  text-transform: uppercase;
+  width: max-content;
+}
+
+.nav-menu-link {
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+
+.nav-menu-link:hover,
+.nav-menu-link_active {
+  background-color: #ff0080;
+  transition: 0.5s;
+}
+
+/* TOGGLE */
+.nav-toggle {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  cursor: pointer;
+
+  display: none;
+}
+
+/*Apartado de inicio*/
+#inicio{
+    background: #ff0000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffa8d8, #fd5ea8, #ff1c67);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fd5ea8, #ffa8d8, #fd5ea8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#inicio .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 80px 10px;
+}
+
+#inicio .contenido-seccion .info{
+    padding-bottom: 10px;
+}
+#inicio .contenido-seccion .info h1{
+    font-size: 60px;
+    letter-spacing: 1px;
+    padding-top: 20px;
+    font-family: 'Kanit', cursive;
+}
+#inicio .contenido-seccion .info h2{
+    font-weight: normal;
+    font-size: 30px;
+    margin-top: -5px;
+    /*letter-spacing: 1px;*/
+    font-family: 'Kanit', cursive;
+}
+
+#inicio img{
+    border-radius: 50%;
+    height: 200px;
+}
+
+.titulo-de-seccion{
+    font-family: 'Kanit', cursive;;
+    font-size: 2rem;
+}
+
+/*apartado sobre mi*/
+#sobremi{
+    background-color: #ffbce1;
+    padding: 100px 0 100px 0;
+    text-align: center;
+}
+#sobremi h2{
+    font-family: 'Kanit', cursive;
+}
+
+#sobremi .contenido-seccion{
+    max-width:1000px;
+    margin: auto;
+    padding: 0;
+}
+#sobremi .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-top: 10px;
+    font-family: 'Kanit', cursive;
+}
+
+#sobremi .contenido-seccion p{
+    max-width: 700px;
+    margin: auto;
+    color: #222020;
+    
+}
+#sobremi .contenido-seccion .fila{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    
+}
+#sobremi .contenido-seccion .fila .cold{
+    text-align: right;
+    border-right: #000 solid;
+    padding-right: 5px;
+}
+
+#sobremi .contenido-seccion .fila .coll{
+    text-align: left;
+    border-left: #000 solid;
+    padding-left: 5px;
+}
+
+.resumen-de-mi{
+    text-align: justify;
+   
+}
+
+/*apartado resumen*/
+
+#resumen{
+    padding: 80px 0 100px 0;
+    text-align: center;
+    /*background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+    url("img/habilidades.jpg");*/
+    background-color: #ff67b3;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    color: #fff;
+}
+#resumen .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+#resumen .contenido-seccion h2{
+    font-family: 'Kanit', cursive;
+    
+    font-size: 2rem;
+    
+    /*letter-spacing: 1px;*/
+}
+#resumen .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Kanit', cursive;
+}
+#resumen .contenido-seccion .info{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+#resumen .contenido-seccion .info .col{
+    width: 45%;
+}
+#resumen .contenido-seccion .info .col .titulo{
+    display: inline-block;
+    color: #000000;
+    font-weight: bold;
+    border: 2px solid #ff0062;
+    padding: 10px;
+    font-family: 'Kanit', cursive;
+    font-size: 25px;
+
+}
+#resumen .contenido-seccion .info .col table{
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+#resumen .contenido-seccion .info .col table .datos{
+    width: 40%;
+    border-bottom: 1px solid #ff0062;
+}
+#resumen .contenido-seccion .info .col table h4{
+    margin-top: 10px;
+    font-family: 'Kanit', cursive;
+}
+#resumen .contenido-seccion .info .col table h3{
+    font-size: 25px;
+    margin-bottom: 5px;
+    font-family: 'Kanit', cursive;
+}
+#resumen .contenido-seccion .info .col table p{
+    font-size: 14px;
+}
+#resumen .contenido-seccion .info .col table .promedio{
+    display: block;
+    color: #ff006a;
+    margin-top: 10px;
+    font-weight: bold;
+}
+#resumen .contenido-seccion .info .col table .descripcion{
+    border-left: 1px solid #ff0062;
+    padding-left: 20px;
+}
+#resumen .contenido-seccion .info2 .col{
+    width: 45%;
+}
+#resumen .contenido-seccion .info2 .col .titulo{
+    display: inline-block;
+    color: #000000;
+    font-weight: bold;
+    border: 2px solid #ff0062;
+    padding: 10px;
+    font-family: 'Kanit', cursive;
+    font-size: 25px;
+
+}
+#resumen .contenido-seccion .info2 .col h4{
+    margin-top: 10px;
+    font-family: 'Kanit', cursive;
+}
+
+/*apartado contacto*/
+#contacto{
+    background-color: #ffbce1;
+    padding: 100px 0 100px 0;
+    color: #000000;
+    text-align: center;
+}
+#contacto .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+#contacto .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Kanit', cursive;
+}
+#contacto .contenido-seccion .fila{
+    display: flex;
+    justify-content: space-around;
+}
+#contacto .contenido-seccion .fila .col{
+    margin-top: 50px;
+}
+#contacto .contenido-seccion .fila .col h3{
+    color: #ff004c;
+    font-family: 'Kanit', cursive;
+}
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+    body {
+        
+        padding: 0 10px;
+    }
+
+    .header {
+        height: 60px;
+    }
+
+    .logo {
+        font-size: 25px;
+        padding: 0 20px;
+        line-height: 60px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        background-color: #ff00c8;
+        position: fixed;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+
+        height: calc(100% - 60px);
+        overflow-y: auto;
+
+        left: 100%;
+        transition: left 0.3s;
+    }
+
+    .nav-menu-item {
+        line-height: 70px;
+    }
+
+    .nav-menu-link:hover,
+    .nav-menu-link_active {
+        background: none;
+        color: #ff0000;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu_visible {
+        left: 0;
+    }
+
+    .nav-toggle:focus:not(:focus-visible) {
+        outline: none;
+    }
+
+    #sobremi .contenido-seccion .resumen-de-mi{
+        display: block;
+        width: 85%;
+        margin: auto;
+    }
+
+    #resumen .contenido-seccion .info{
+        display: block;
+    }
+    #resumen .contenido-seccion .info .col{
+        width: 90%;
+        margin: auto;
+    }
+    #resumen .contenido-seccion .info .col .titulo{
+        display: block;
+        text-align: center;
+    }
+    #resumen .contenido-seccion .info .col table{
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    #contacto .contenido-seccion .fila{
+        display: block;
+    }
+}
